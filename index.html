@@ -10,6 +10,9 @@
           grid-template-columns: 1fr 2fr 1fr;
           grid-auto-rows: minmax(100px, auto);
           grid-gap: 1em;
+          /* justify-items: start; */
+          /* justify items will align item horizontally, stretch is the default which stretches to fill the whole space */
+          /* align-items aligns them vertically just like with flexbox */
         }
 
         .grid > div {
@@ -21,6 +24,24 @@
           background: #ddd;
         }
 
+        .box1 {
+          align-self: center;
+
+        }
+
+        .box2 {
+          justify-self: start
+        }
+
+        .box3 {
+          align-self: end;
+        }
+
+        .box4 {
+          justify-self: base;
+        }
+
+  /* can either align and justify all items in grid by setting property on parent container or individually by setting it on individual item using justif-self and align-self */
 
     </style>
   </head>
