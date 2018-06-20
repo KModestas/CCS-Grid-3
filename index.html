@@ -25,20 +25,26 @@
         }
 
         .box1 {
-          align-self: center;
-
+          /* align-self: center; */
+          grid-column: 1/3;
+          grid:row 1/3;
         }
 
         .box2 {
-          justify-self: start
+          /* justify-self: start */
+          grid-column: 3;
+          grid-row: 1/3;
         }
 
         .box3 {
-          align-self: end;
+          /* align-self: end; */
+          grid-column: 2/4;
+          grid-row: 3;
+          /* grid column and row sepcifies where the item starts in the grid and which point it ends, allowing you to re-arrange the items in the grid */
         }
 
         .box4 {
-          justify-self: base;
+          /* justify-self: base; */
         }
 
   /* can either align and justify all items in grid by setting property on parent container or individually by setting it on individual item using justif-self and align-self */
